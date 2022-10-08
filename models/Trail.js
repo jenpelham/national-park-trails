@@ -1,43 +1,19 @@
 const mongoose = require("mongoose");
 
 const TrailSchema = new mongoose.Schema({
-  NavigationPreloadManager: {
+  trailId: {
     type: String,
     required: true,
   },
-  image: {
+  userId: {
     type: String,
     require: true,
   },
-  difficulty: {
-    type: String,
+  favorite: {
+    type: Boolean,
     required: true,
   },
-  distance: {
-    type: String,
-    required: true,
-  },
-  elevation: {
-    type: String,
-    required: true,
-  },
-  time: {
-    type: Number,
-    required: true,
-  },
-  map: {
-    type: String,
-    required: true,
-  },
-  pets: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  alert: {
+  comment: {
     type: String,
     required: true,
   },
