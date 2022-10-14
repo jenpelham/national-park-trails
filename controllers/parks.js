@@ -1,5 +1,5 @@
 //pulling park data
-document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('trail-list').addEventListener('click', getFetch)
 
 function getFetch(){
   const entry = document.querySelector('input').value
@@ -20,7 +20,7 @@ function getFetch(){
         console.log(trail)
 
         const trailName = trail.map(thingToDo => thingToDo.title)
-        document.querySelector('h2').innerText = trailName
+        document.querySelector('.trail-name').innerText = trailName
 
         const trailDescription = trail.map(thingToDo => thingToDo.shortDescription)
         document.querySelector('h3').innerText = trailDescription
