@@ -1,5 +1,5 @@
 //pulling park data
-document.querySelector('trail-list').addEventListener('click', getFetch)
+//document.querySelector('trail-list').addEventListener('click', getFetch)
 
 function getFetch(){
   const entry = document.querySelector('input').value
